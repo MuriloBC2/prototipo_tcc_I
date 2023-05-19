@@ -1,13 +1,20 @@
 var tabela = document.querySelector('[data-js="tabela"]')
 let main = document.querySelector('#exibir')
 
-   
+var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
+'N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+
+
+    l= alfabeto[Math.floor(Math.random()*25)]
+
     var jogo = [
-        ['a', 'j', 'f', 'k', 'l', 'm'],
-        ['b', 'c', 'i', 'h', 'd', 'z'],
-        ['j', 'b', 'l', 't', 'c', 'w'],
-        ['q', 'x', 'h', 'p', 'y', 'r'],
-        ['u', 'n', 'o', 'v', 'x', 'r'],
+
+        
+        [l, l, 'F', l, l, l],
+        [l, l, 'I', l, l, l],
+        [l, l, 'L', l, l, l],
+        [l, l, 'H', l, l, l],
+        [l, l, 'O', l, l, l],
     ]
 
     var lines = [];
