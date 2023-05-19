@@ -7,14 +7,12 @@ var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
 
     l= alfabeto[Math.floor(Math.random()*25)]
 
-    var jogo = [
-
-        
-        [l, l, 'F', l, l, l],
-        [l, l, 'I', l, l, l],
-        [l, l, 'L', l, l, l],
-        [l, l, 'H', l, l, l],
-        [l, l, 'O', l, l, l],
+    var jogo = [       
+        [alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], 'F', alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)]],
+        [alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], 'I', alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)]],
+        [alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], 'L', alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)]],
+        [alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], 'H', alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)]],
+        [alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], 'O', alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)], alfabeto[Math.floor(Math.random()*25)]],
     ]
 
     var lines = [];
