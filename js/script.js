@@ -1,5 +1,6 @@
 var tabela = document.querySelector('[data-js="tabela"]')
-let main = document.querySelector('#exibir')
+var matriz = document.querySelector('#tabelas')
+
 
 var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
 'N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -18,14 +19,20 @@ var alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M',
     var lines = [];
 
 	jogo.map(function(item, index){
-		lines[index] = document.querySelector('[data-js="linha'+ index +'"]');
-	});
+		lines[index] = document.querySelector('[data-js="linha'+ index +'"]')
+	})
 
 	jogo.forEach(function(item, index){
 		jogo[index].forEach(function(item){
-			lines[index].insertAdjacentHTML('beforeend', '<td>' + item +'</td>');
-		});
-	});
+			lines[index].insertAdjacentHTML('beforeend', '<td>' + item +'</td>')
+		})
+	})
+
+
+    var f = jogo[ [1,3], [1,4] ]
+    matriz.addEventListener("click", function(){
+        f.style.color="red"
+    })
 
 
 
